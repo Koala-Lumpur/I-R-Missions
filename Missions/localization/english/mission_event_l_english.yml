@@ -17,3 +17,13 @@
   mission_rome.3.desc:0 "Etruria has been conquered allowing for further northward expansion"
   mission_rome.3.a:0 "Amazing"
   mission_rome.3.a.tt:0 "We have gained claims on the following provinces:\nAternum, Picenum, Pisae and Ariminum"
+
+  mission_rome.5.t:0 "Mission complete!"
+  mission_rome.5.desc:0 "The Tarentum area has been seized. It is time to expand into the Greek area"
+  mission_rome.5.a:0 "Amazing"
+  mission_rome.5.a.tt:0 "We have gained claims on the following provinces:\nEpirus and Illyria Graeca"
+
+  mission_rome.6.t:0 "Mission complete!"
+  mission_rome.6.desc:0 "The Calabria province has been annexed, allowing expansion into Sicily."
+  mission_rome.6.a:0 "Amazing"
+  mission_rome.6.a.tt:0 "We have gained claims on the following provinces:\nSiculia and Sicania"

@@ -38,9 +38,9 @@ country_decisions = {
     }
 
     allow = {
-      owns = 32
-      owns = 43
-      owns = 45
+      owns_or_subject_owns = 32
+      owns_or_subject_owns = 43
+      owns_or_subject_owns = 45
     }
 
     effect = {
@@ -70,10 +70,10 @@ country_decisions = {
     }
 
     allow = {
-      owns = 14
-      owns = 114
-      owns = 131
-      owns = 134
+      owns_or_subject_owns = 14
+      owns_or_subject_owns = 114
+      owns_or_subject_owns = 131
+      owns_or_subject_owns = 134
     }
 
     effect = {
@@ -107,6 +107,66 @@ country_decisions = {
       }
       add_oratory_power = 100
       set_variable = roman_mission_4_done
+    }
+  }
+
+  # Seize Tarentum
+  roman_mission_5 = {
+    potential = {
+      num_of_cities >= 1
+      tag = ROM
+      has_variable = roman_mission_2_done
+      NOT = {
+        has_variable = roman_mission_5_done
+      }
+    }
+
+    highlight = {
+      is_in_area = tarentum_area
+    }
+
+    allow = {
+      area:tarentum_area = {
+        any_area_province = {
+          count = all
+          owner = root
+        }
+      }
+    }
+
+    effect = {
+      trigger_event = { id = mission_rome.5 }
+      set_variable = roman_mission_5_done
+    }
+  }
+
+  # Seize Calabria
+  roman_mission_6 = {
+    potential = {
+      num_of_cities >= 1
+      tag = ROM
+      has_variable = roman_mission_2_done
+      NOT = {
+        has_variable = roman_mission_6_done
+      }
+    }
+
+    highlight = {
+      is_in_area = croton_area
+    }
+
+    allow = {
+      area:croton_area = {
+        any_area_province = {
+          count = all
+          owner = root
+        }
+      }
+    }
+
+    effect = {
+      trigger_event = { id = mission_rome.6 }
+      set_variable = roman_mission_6_done
     }
   }
 }

@@ -89,3 +89,57 @@ mission_rome.3 = {
 		}
 	}
 }
+
+mission_rome.5 = {
+	type = country_event
+	title = mission_rome.5.t
+	desc = mission_rome.5.desc
+	picture = romans_marching
+
+	option = {
+		name = "mission_rome.5.a"
+		custom_tooltip = mission_rome.5.a.tt
+
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						is_in_area = epirus_area
+						is_in_area = illyria_graeca_area
+					}
+					NOT = {
+						owned_or_subject_owned = ROOT
+					}
+				}
+				add_claim = ROM
+			}
+		}
+	}
+}
+
+mission_rome.6 = {
+	type = country_event
+	title = mission_rome.6.t
+	desc = mission_rome.6.desc
+	picture = romans_marching
+
+	option = {
+		name = "mission_rome.6.a"
+		custom_tooltip = mission_rome.6.a.tt
+
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						is_in_area = east_sicily_area
+						is_in_area = west_sicily_area
+					}
+					NOT = {
+						owned_or_subject_owned = ROOT
+					}
+				}
+				add_claim = ROM
+			}
+		}
+	}
+}
