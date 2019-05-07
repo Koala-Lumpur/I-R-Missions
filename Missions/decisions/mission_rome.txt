@@ -1,0 +1,112 @@
+country_decisions = {
+
+  # Train 25 cohorts
+  roman_mission_1 = {
+    potential = {
+      num_of_cities >= 1
+      tag = ROM
+      NOT = {
+        has_variable = roman_mission_1_done
+      }
+    }
+    allow = {
+      num_of_cohorts >= 25
+    }
+    effect = {
+      trigger_event = { id = mission_rome.1 }
+      set_variable = roman_mission_1_done
+    }
+  }
+
+  # Conquer Samnium
+  roman_mission_2 = {
+    potential = {
+      num_of_cities >= 1
+      tag = ROM
+      has_variable = roman_mission_1_done
+      NOT = {
+        has_variable = roman_mission_2_done
+      }
+    }
+
+    highlight = {
+      OR = {
+        province_id = 32
+        province_id = 43
+        province_id = 45
+      }
+    }
+
+    allow = {
+      owns = 32
+      owns = 43
+      owns = 45
+    }
+
+    effect = {
+      trigger_event = { id = mission_rome.2 }
+      set_variable = roman_mission_2_done
+      }
+    }
+
+  # Conquer Etruria
+  roman_mission_3 = {
+    potential = {
+      num_of_cities >= 1
+      tag = ROM
+      has_variable = roman_mission_1_done
+      NOT = {
+        has_variable = roman_mission_3_done
+      }
+    }
+
+    highlight = {
+      OR = {
+        province_id = 14
+        province_id = 114
+        province_id = 131
+        province_id = 134
+      }
+    }
+
+    allow = {
+      owns = 14
+      owns = 114
+      owns = 131
+      owns = 134
+    }
+
+    effect = {
+      trigger_event = { id = mission_rome.3 }
+      set_variable = roman_mission_3_done
+    }
+  }
+
+  # Build buildings
+  roman_mission_4 = {
+    potential = {
+      num_of_cities >= 1
+      tag = ROM
+      NOT = {
+        has_variable = roman_mission_4_done
+      }
+    }
+
+    allow = {
+      root.capital_scope = {
+        total_population >= 50
+      }
+    }
+
+    effect = {
+      root.capital_scope = {
+        add_province_modifier = {
+          name = capital_development
+          duration = 0
+        }
+      }
+      add_oratory_power = 100
+      set_variable = roman_mission_4_done
+    }
+  }
+}

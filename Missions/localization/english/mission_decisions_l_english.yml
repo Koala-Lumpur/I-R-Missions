@@ -1,0 +1,12 @@
+﻿l_english:
+ roman_mission_1:0 "(#Y Mission#!) Build up an army"
+ roman_mission_1_desc:0 "Tain up to at least #Y 25 cohorts#! to gain #Y claims#! on the #Y Etruscans#!\nCompleting this mission opens up for two more missions: #Y Conquer Etruria#! & #Y Conquer Samnium#!"
+
+ roman_mission_2:0 "(#Y Mission#!) Conquer Samnium"
+ roman_mission_2_desc:0 "Take #Y Samnium#! land, and gain #Y claims#! in southern provinces"
+
+ roman_mission_3:0 "(#Y Mission#!) Conquer Etruria"
+ roman_mission_3_desc:0 "Take #Y Etruscan#! land and gain #Y claims#! in northern provinces"
+
+ roman_mission_4:0 "(#Y Mission#!) Increase population of Roma"
+ roman_mission_4_desc:0 "Get the #Y Roman capital#! to at least 50 #Y total population#!"

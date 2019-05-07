@@ -1,0 +1,19 @@
+﻿l_english:
+  # Change of original events
+  dhe_rome.13.a.tt:0 "Something has to be done"
+
+  #Custom mission events
+  mission_rome.1.t:0 "Mission complete!"
+  mission_rome.1.desc:0 "The Romans have trained an army to prepare for the conquest of the Etruscans. Completing this mission give the Romans claims on Etruscan lands "
+  mission_rome.1.a:0 "Amazing"
+  mission_rome.1.a.tt:0 "We have gained claims on the following provinces:\nTuscia, Etruria, Campania, Apulia, Lucania and Picenum."
+
+  mission_rome.2.t:0 "Mission complete!"
+  mission_rome.2.desc:0 "Samnium has been conquered, allowing for further southward expansion"
+  mission_rome.2.a:0 "Amazing"
+  mission_rome.2.a.tt:0 "We have gained claims on the following provinces:\nTarentum and Calabria"
+
+  mission_rome.3.t:0 "Mission complete!"
+  mission_rome.3.desc:0 "Etruria has been conquered allowing for further northward expansion"
+  mission_rome.3.a:0 "Amazing"
+  mission_rome.3.a.tt:0 "We have gained claims on the following provinces:\nAternum, Picenum, Pisae and Ariminum"

@@ -1,0 +1,91 @@
+namespace = mission_rome
+
+# Train cohorts
+mission_rome.1 = {
+	type = country_event
+	title = mission_rome.1.t
+	desc = mission_rome.1.desc
+	picture = romans_marching
+
+	option = {
+		name = "mission_rome.1.a"
+		custom_tooltip = mission_rome.1.a.tt
+
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						is_in_area = south_etruria_area
+						is_in_area = north_etruria_area
+						is_in_area = heraclea_area
+						is_in_area = neapolis_area
+						is_in_area = cannae_area
+						is_in_area = asculum_area
+					}
+					NOT = {
+						owned_or_subject_owned = ROOT
+					}
+				}
+				add_claim = ROM
+			}
+		}
+	}
+}
+
+# Conquer Samnium
+mission_rome.2 = {
+	type = country_event
+	title = mission_rome.2.t
+	desc = mission_rome.2.desc
+	picture = romans_marching
+
+	option = {
+		name = "mission_rome.2.a"
+		custom_tooltip = mission_rome.2.a.tt
+
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						is_in_area = tarentum_area
+						is_in_area = croton_area
+					}
+					NOT = {
+						owned_or_subject_owned = ROOT
+					}
+				}
+				add_claim = ROM
+			}
+		}
+	}
+}
+
+# Conquer Etruria
+mission_rome.3 = {
+	type = country_event
+	title = mission_rome.3.t
+	desc = mission_rome.3.desc
+	picture = romans_marching
+
+	option = {
+		name = "mission_rome.3.a"
+		custom_tooltip = mission_rome.3.a.tt
+
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						is_in_area = aternum_area
+						is_in_area = asculum_area
+						is_in_area = ariminum_area
+						is_in_area = pisae_area
+					}
+					NOT = {
+						owned_or_subject_owned = ROOT
+					}
+				}
+				add_claim = ROM
+			}
+		}
+	}
+}
