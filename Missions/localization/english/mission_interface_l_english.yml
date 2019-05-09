@@ -1,0 +1,4 @@
+﻿l_english:
+ TUTORIAL_TOOLTIP:0 "#T $NAME$#!\n#TF $DESC$#!\n\n#W Reward#!\n$EFFECT$\n"
+ TUTORIAL_RECOMMENDED_TT:0 "#t Missions#!\nThe missions menu will show the missions currently available for your current country
+ TUTORIAL_MENU:0 "#t Missions#!"

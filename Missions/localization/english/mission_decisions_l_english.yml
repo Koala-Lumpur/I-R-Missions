@@ -1,18 +1,20 @@
 ﻿l_english:
- roman_mission_1:0 "(#Y Mission#!) Build up an army"
+  roman_mission_completed:0 "Triggers event"
+
+ roman_mission_1:0 "Build up an army"
  roman_mission_1_desc:0 "Tain up to at least #Y 25 cohorts#! to gain #Y claims#! on the #Y Etruscans#!\nCompleting this mission opens up for two more missions: #Y Conquer Etruria#! & #Y Conquer Samnium#!"
 
- roman_mission_2:0 "(#Y Mission#!) Conquer Samnium"
+ roman_mission_2:0 "Conquer Samnium"
  roman_mission_2_desc:0 "Take #Y Samnium#! land, and gain #Y claims#! in southern provinces. Unlocks the mission #Y Seize Tarentum#!"
 
- roman_mission_3:0 "(#Y Mission#!) Conquer Etruria"
+ roman_mission_3:0 "Conquer Etruria"
  roman_mission_3_desc:0 "Take #Y Etruscan#! land and gain #Y claims#! in northern provinces"
 
- roman_mission_4:0 "(#Y Mission#!) Increase population of Roma"
+ roman_mission_4:0 "Increase population of Roma"
  roman_mission_4_desc:0 "Get the #Y Roman capital#! to at least 50 #Y total population#!"
 
- roman_mission_5:0 "(#Y Mission#!) Seize Tarentum"
+ roman_mission_5:0 "Seize Tarentum"
  roman_mission_5_desc:0 "Take the province of #Y Tarentum#!, giving claims in the neighbouring #Y Greek areas#!"
 
- roman_mission_6:0 "(#Y Mission#!) Annex Calabria"
+ roman_mission_6:0 "Annex Calabria"
  roman_mission_6_desc:0 "Annex the province of #Y Calabria#!, giving claims on all of Sicily"

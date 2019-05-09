@@ -90,6 +90,18 @@ mission_rome.3 = {
 	}
 }
 
+mission_rome.4 = {
+	type = country_event
+	title = missions_rome.4.t
+	desc = mission_rome.4.desc
+	picture = romans_marching
+
+	option = {
+		name = "mission_rome.4.a"
+	}
+
+}
+
 mission_rome.5 = {
 	type = country_event
 	title = mission_rome.5.t

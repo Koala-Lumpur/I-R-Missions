@@ -18,6 +18,10 @@
   mission_rome.3.a:0 "Amazing"
   mission_rome.3.a.tt:0 "We have gained claims on the following provinces:\nAternum, Picenum, Pisae and Ariminum"
 
+  mission_rome.4.t:0 "Mission complete!"
+  mission_rome.4.desc:0 "Roma has expanded providing the capital with an extra building slot"
+  mission_rome.4.a:0 "Amazing"
+
   mission_rome.5.t:0 "Mission complete!"
   mission_rome.5.desc:0 "The Tarentum area has been seized. It is time to expand into the Greek area"
   mission_rome.5.a:0 "Amazing"

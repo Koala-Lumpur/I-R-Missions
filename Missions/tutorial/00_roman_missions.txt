@@ -1,0 +1,233 @@
+# Train cohorts
+roman_mission_1 = {
+
+  step = 1
+
+  potential = {
+    tag = ROM
+    NOT = {
+      has_variable = roman_mission_1_done
+    }
+  }
+
+  allow = {
+    num_of_cohorts >= 25
+    NOT = {
+      has_variable = roman_mission_1_done
+    }
+  }
+
+  completed = {
+    has_variable = roman_mission_1_done
+  }
+
+  effect = {
+    hidden_effect = {
+      trigger_event  = { id = mission_rome.1 }
+    }
+    set_variable = roman_mission_1_done
+    custom_tooltip = roman_mission_completed
+  }
+}
+
+# Conquer Samnium
+roman_mission_2 = {
+
+  step = 2
+
+  potential = {
+    tag = ROM
+    has_variable = roman_mission_1_done
+    NOT = {
+      has_variable = roman_mission_2_done
+    }
+  }
+
+  highlight = {
+    OR = {
+      province_id = 32
+      province_id = 43
+      province_id = 45
+    }
+  }
+
+  allow = {
+    owns_or_subject_owns = 32
+    owns_or_subject_owns = 43
+    owns_or_subject_owns = 45
+    NOT = {
+      has_variable = roman_mission_2_done
+    }
+  }
+
+  completed = {
+    has_variable = roman_mission_2_done
+  }
+
+  effect = {
+    trigger_event = { id = mission_rome.2 }
+    set_variable = roman_mission_2_done
+    custom_tooltip = roman_mission_completed
+  }
+}
+
+# Conquer Etruria
+roman_mission_3 = {
+
+  step = 3
+
+  potential = {
+    tag = ROM
+    has_variable = roman_mission_1_done
+    NOT = {
+      has_variable = roman_mission_3_done
+    }
+  }
+
+  highlight = {
+    OR = {
+      province_id = 14
+      province_id = 114
+      province_id = 131
+      province_id = 134
+    }
+  }
+
+  allow = {
+    owns_or_subject_owns = 14
+    owns_or_subject_owns = 114
+    owns_or_subject_owns = 131
+    owns_or_subject_owns = 134
+    NOT = {
+      has_variable = roman_mission_3_done
+    }
+  }
+
+  completed = {
+    has_variable = roman_mission_3_done
+  }
+
+  effect = {
+    trigger_event = { id = mission_rome.3 }
+    set_variable = roman_mission_3_done
+    custom_tooltip = roman_mission_completed
+  }
+}
+
+# increase pop
+roman_mission_4 = {
+
+  step = 4
+
+  potential = {
+    tag = ROM
+    NOT = {
+      has_variable = roman_mission_4_done
+    }
+  }
+
+  allow = {
+    root.capital_scope = {
+      total_population >= 50
+    }
+    NOT = {
+      has_variable = roman_mission_4_done
+    }
+  }
+
+  completed = {
+    has_variable = roman_mission_4_done
+  }
+
+  effect = {
+    root.capital_scope = {
+      add_province_modifier = {
+        name = capital_development
+        duration = -1
+      }
+    }
+    add_oratory_power = 100
+    set_variable = roman_mission_4_done
+  }
+}
+
+# Seize Tarentum
+roman_mission_5 = {
+
+  step = 5
+
+  potential = {
+    tag = ROM
+    has_variable = roman_mission_2_done
+    NOT = {
+      has_variable = roman_mission_5_done
+    }
+  }
+
+  highlight = {
+    is_in_area = tarentum_area
+  }
+
+  allow = {
+    area:tarentum_area = {
+      any_area_province = {
+        count = all
+        owner = root
+      }
+    }
+    NOT = {
+      has_variable = roman_mission_5_done
+    }
+  }
+
+  completed = {
+    has_variable = roman_mission_5_done
+  }
+
+  effect = {
+    trigger_event = { id = mission_rome.5 }
+    set_variable = roman_mission_5_done
+    custom_tooltip = roman_mission_completed
+  }
+}
+
+
+# Seize Calabria
+roman_mission_6 = {
+
+  step = 6
+
+  potential = {
+    tag = ROM
+    has_variable = roman_mission_2_done
+    NOT = {
+      has_variable = roman_mission_6_done
+    }
+  }
+
+  highlight = {
+    is_in_area = croton_area
+  }
+
+  allow = {
+    area:croton_area = {
+      any_area_province = {
+        count = all
+        owner = root
+      }
+    }
+    NOT = {
+      has_variable = roman_mission_6_done
+    }
+  }
+
+  completed = {
+    has_variable = roman_mission_6_done
+  }
+
+  effect = {
+    trigger_event = { id = mission_rome.6 }
+    set_variable = roman_mission_6_done
+    custom_tooltip = roman_mission_completed
+  }
+}

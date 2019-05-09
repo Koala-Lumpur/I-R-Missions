@@ -1,0 +1,9 @@
+name="Missions"
+path="mod/Missions"
+tags={
+	"Overhaul"
+	"Interface"
+	"Historical"
+}
+picture="thumbnail.png"
+remote_file_id="1732101158"
