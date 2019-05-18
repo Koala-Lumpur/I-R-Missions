@@ -165,7 +165,9 @@ roman_mission_5 = {
   }
 
   highlight = {
-    is_in_area = tarentum_area
+    OR = {
+      is_in_area = tarentum_area
+    }
   }
 
   allow = {
@@ -206,7 +208,9 @@ roman_mission_6 = {
   }
 
   highlight = {
-    is_in_area = croton_area
+    OR = {
+      is_in_area = croton_area
+    }
   }
 
   allow = {
@@ -228,6 +232,205 @@ roman_mission_6 = {
   effect = {
     trigger_event = { id = mission_rome.6 }
     set_variable = roman_mission_6_done
+    custom_tooltip = roman_mission_completed
+  }
+}
+
+# Take Sicily
+roman_mission_7 = {
+  step = 7
+
+  potential = {
+    tag = ROM
+    has_variable = roman_mission_6_done
+    NOT = {
+      has_variable = roman_mission_7_done
+    }
+  }
+
+  highlight = {
+    OR = {
+      is_in_area = east_sicily_area
+      is_in_area = west_sicily_area
+    }
+  }
+
+  allow = {
+    area:east_sicily_area = {
+      any_area_province = {
+        count = all
+        root = owner
+      }
+    }
+    area:west_sicily_area = {
+      any_area_province = {
+        count = all
+        root = owner
+      }
+    }
+    NOT = {
+      has_variable = roman_mission_7_done
+    }
+  }
+
+  completed = {
+    has_variable = roman_mission_7_done
+  }
+
+  effect = {
+    trigger_event = { id = mission_rome.7 }
+    set_variable = roman_mission_7_done
+    custom_tooltip = roman_mission_completed
+  }
+}
+
+# Take corsica and sardinia
+roman_mission_8 = {
+
+  step = 8
+
+  potential = {
+    tag = ROM
+    has_variable = roman_mission_7_done
+    NOT = {
+      has_variable = roman_mission_8_done
+    }
+  }
+
+  highlight = {
+    OR = {
+      is_in_area = sardinia_meridionalis
+      is_in_area = sardinia_septentrionalis
+      is_in_area = corsica_area
+    }
+  }
+
+  allow = {
+  owns = 3507
+  owns = 3515
+  owns = 3516
+  owns = 3514
+  owns = 3513
+  area:sardinia_meridionalis = {
+    any_area_province = {
+      count = all
+      root = owner
+    }
+  }
+  area:sardinia_septentrionalis = {
+    any_area_province = {
+      count = all
+      root = owner
+    }
+  }
+  NOT = {
+      has_variable = roman_mission_8_done
+    }
+  }
+
+  completed = {
+    has_variable = roman_mission_8_done
+  }
+
+  effect = {
+    trigger_event = { id = mission_rome.8 }
+    set_variable = roman_mission_8_done
+    custom_tooltip = roman_mission_completed
+  }
+}
+
+# foothold in Iberia
+roman_mission_9 = {
+
+  step = 9
+
+  potential = {
+    tag = ROM
+    has_variable = roman_mission_8_done
+    NOT = {
+      has_variable = roman_mission_9_done
+    }
+  }
+
+  highlight = {
+    OR = {
+      province_id = 1006
+      province_id = 1053
+      province_id = 1009
+      province_id = 1063
+    }
+  }
+
+  allow = {
+    any_owned_province = {
+      is_coastal = yes
+      OR = {
+        is_in_area = cessetania_area
+    }
+  }
+
+  NOT = {
+      has_variable = roman_mission_9_done
+    }
+  }
+
+  completed = {
+    has_variable = roman_mission_9_done
+  }
+
+  effect = {
+    trigger_event = { id = mission_rome.9 }
+    set_variable = roman_mission_9_done
+    custom_tooltip = roman_mission_completed
+  }
+}
+
+# Secure the East Iberian coastline
+roman_mission_10 = {
+
+  step = 10
+
+  potential = {
+    tag = ROM
+    has_variable = roman_mission_9_done
+    NOT = {
+      has_variable = roman_mission_10_done
+    }
+  }
+
+  highlight = {
+    OR = {
+      province_id = 1000
+      province_id = 1012
+      province_id = 1240
+      province_id = 1029
+      province_id = 1032
+      province_id = 1031
+      province_id = 1033
+    }
+  }
+
+  allow = {
+    owns = 1000
+    owns = 1012
+    owns = 1240
+    owns = 1029
+    owns = 1032
+    owns = 1031
+    owns = 1033
+
+    NOT = {
+      has_variable = roman_mission_10_done
+    }
+  }
+
+  completed = {
+    has_variable = roman_mission_10_done
+  }
+
+  effect = {
+    trigger_event = { id = mission_rome.10 }
+    set_variable = roman_mission_10_done
     custom_tooltip = roman_mission_completed
   }
 }

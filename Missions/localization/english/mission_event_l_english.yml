@@ -31,3 +31,23 @@
   mission_rome.6.desc:0 "The Calabria province has been annexed, allowing expansion into Sicily."
   mission_rome.6.a:0 "Amazing"
   mission_rome.6.a.tt:0 "We have gained claims on the following provinces:\nSiculia and Sicania"
+
+  mission_rome.7.t:0 "Mission complete!"
+  mission_rome.7.desc:0 "The Sicily area has been seized, it is time to expand overseas!"
+  mission_rome.7.a:0 "Amazing"
+  mission_rome.7.a.tt:0 "We have gained claims on the following provinces:\nSardinia and Corsica"
+
+  mission_rome.8.t:0 "Mission complete!"
+  mission_rome.8.desc:0 "Corsica and Sardinia is ours, next target is the Iberians."
+  mission_rome.8.a:0 "Amazing"
+  mission_rome.8.a.tt:0 "We have gained claims on the following province:\nCessetania"
+
+  mission_rome.9.t:0 "Mission complete!"
+  mission_rome.9.desc:0 "A foothold has been secured in the Iberian region, it is time to expand this frontier."
+  mission_rome.9.a:0 "Amazing"
+  mission_rome.9.a.tt:0 "We have gained claims on the following provinces:\nIndicetia, Ilercavonia, Edetania, Contestania septentrionalis and Contestania Meridionalis"
+
+  mission_rome.10.t:0 "Mission complete!"
+  mission_rome.10.desc:0 "The East Iberian coastline is ours, now let us seize the Carthaginian territories in Iberia "
+  mission_rome.10.a:0 "Amazing"
+  mission_rome.10.a.tt:0 "We have gained claims on the following provinces:\nMasitania, Bastetania, Malacitia and Baetica Gaditanus"

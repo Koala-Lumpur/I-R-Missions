@@ -18,3 +18,15 @@
 
  roman_mission_6:0 "Annex Calabria"
  roman_mission_6_desc:0 "Annex the province of #Y Calabria#!, giving claims on all of Sicily"
+
+ roman_mission_7:0 "Take Sicily"
+ roman_mission_7_desc:0 "Annex the provinces of #Y Siculia#! and #Y Sicania#!, giving claims on all of Sicily"
+
+ roman_mission_8:0 "Conquer Sardinia and Corsica"
+ roman_mission_8_desc:0 "Annex the provinces of #Y Sardinina#! and #Y Corsica#!, giving claims on an Iberian province"
+
+ roman_mission_9:0 "Gain a foothold in Iberia"
+ roman_mission_9_desc:0 "Annex at least one of the cities higlighted giving claims on an Iberian province"
+
+ roman_mission_10:0 "Secure the East Iberian coastline"
+ roman_mission_10_desc:0 "Conquer the main ports of the #Y East Iberian coast#!"
